@@ -1,7 +1,7 @@
-import { app} from "../app"
+import { app} from "./app"
 import http from "http";
-import connectDB from "../utils/db";
-import { initSocketServer } from "../socketServer";
+import connectDB from "./utils/db";
+import { initSocketServer } from "./socketServer";
 import {v2 as cloudinary} from "cloudinary";
 require("dotenv").config();
 const server = http.createServer(app);
